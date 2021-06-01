@@ -6,34 +6,56 @@ import {
   ServicesCard,
   ServicesIcon,
   ServicesH2,
-  ServicesP
+  ServicesP,
+  ArrowRight,
+  Play,
+  Stop
 } from "./ServicesElements";
-import Icon1 from '../../images/data.svg'
-import Icon2 from '../../images/bus_stop.svg'
-import Icon3 from '../../images/bus_stop_2.svg'
+import Transmilenio from '../../images/red.png'
+import SITP1 from '../../images/blue.png'
+import SITP2 from '../../images/orange.png'
+import BusStop from '../../images/bus_stop.svg'
 
 const Services = () => {
   return (
+    <>
     <ServicesContainer>
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>Esta es la ruta que te sugerimos</ServicesH1>
       <ServicesWrapper>
-        <ServicesCard>
-          <ServicesIcon src={Icon1} />
-          <ServicesH2>We help</ServicesH2>
-          <ServicesP>We help x2</ServicesP>
+      <ServicesCard>
+          <ServicesIcon src={BusStop} />
+          <ServicesH2>Entrada a Portal</ServicesH2>
+          <ServicesP>Camina hasta el Portal Suba</ServicesP>
+          <Play/>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2} />
-          <ServicesH2>We help</ServicesH2>
-          <ServicesP>We help x2</ServicesP>
+          <ServicesIcon src={Transmilenio} />
+          <ServicesH2>Troncal:F19</ServicesH2>
+          <ServicesP>Toma el servicio F19 en el gate 2</ServicesP>
+          <ArrowRight/>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
-          <ServicesH2>We help</ServicesH2>
-          <ServicesP>We help x2</ServicesP>
+          <ServicesIcon src={BusStop} />
+          <ServicesH2>Troncal: Calle 26</ServicesH2>
+          <ServicesP>Bajate en la estacion Calle 26</ServicesP>
+          <ArrowRight/>
         </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={SITP1} />
+          <ServicesH2>Zonal:R45</ServicesH2>
+          <ServicesP>Toma el SITP R45 en la Calle 26#34-09</ServicesP>
+          <ArrowRight/>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={SITP2} />
+          <ServicesH2>Zonal: T54</ServicesH2>
+          <ServicesP>Toma el SITP T54 en la Calle 3#4-07</ServicesP>
+          <Stop/>
+        </ServicesCard>
+        
       </ServicesWrapper>
     </ServicesContainer>
+    </>
   );
 };
 

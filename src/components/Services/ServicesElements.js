@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MdKeyboardArrowRight, MdArrowForward, MdAddCircle, MdPlayArrow, MdStop } from "react-icons/md";
 
 export const ServicesContainer = styled.div`
   height: 800px;
@@ -7,6 +8,7 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #010606;
+  position: relative;
   @media screen and (max-width: 768px) {
     height: 1100px;
   }
@@ -72,4 +74,13 @@ margin-bottom:10px;
 export const ServicesP=styled.p`
 font-size:1rem;
 text-align:center;
+`;
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  font-size: 40px;
+`;
+export const Play = styled(MdPlayArrow)`
+  font-size: 40px;
+`;
+export const Stop = styled(MdStop)`
+  font-size: 40px;
 `;
