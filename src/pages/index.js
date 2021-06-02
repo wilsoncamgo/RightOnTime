@@ -20,6 +20,7 @@ const toggle=()=>{
          <InfoSection{...homeObjOne}/>
          <InfoSection{...homeObjTwo}/>
          <InfoSection{...homeObjThree}/>
+         
         </>
     )
 }

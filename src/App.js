@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SigninPage from "./pages/sign_in";
 import SignupPage from "./pages/sign_up";
 import DashboardPage from "./pages/dashboard";
+import Page404 from "./components/NoFound";
 import { AuthProvider } from "./components/contexts/AuthContext";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/sign_in" component={SigninPage} exact />
           <Route path="/sign_up" component={SignupPage} exact />
           <Route path="/dashboard" component={DashboardPage} exact />
+          <Route component={Page404} />
         </Switch>
       </Router>
     </AuthProvider>
